@@ -1,0 +1,1575 @@
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Application,1,13,24]; @symbol_usingAlias = [App,1,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; @symbol_usingAlias = [Ui,2,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Timer,3,13,18]; ]
+using Toybox.Timer;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Attention,4,13,22]; ]
+using Toybox.Attention;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 8; @symbol_classdef = [EMOMApp,8,6,13]; @symbol_extends<0> = [App,8,22,25]; @symbol_extends<1> = [AppBase,8,26,33]; ]
+class EMOMApp extends App.AppBase {
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_9_26_11_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 10 8 ]
+        symbol [ AppBase %tmp.2 10 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 10 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_9_26_11_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 13; @symbol_functiondef = [onStart,13,13,20]; @symbol_param<0> = [state,13,21,26]; ]
+    function onStart(state) {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 16; @symbol_functiondef = [onStop,16,13,19]; @symbol_param<0> = [state,16,20,25]; ]
+    function onStop(state) {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 19; @symbol_functiondef = [getInitialView,19,13,27]; ]
+    function getInitialView() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_19_30_21_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 20 8 ]
+        %tmp.1 = newa 2;
+        symbol [ EMOMConfigView %tmp.5 20 20 34 ];
+        %tmp.5 = getv ? :EMOMConfigView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        symbol [ EMOMConfigDelegate %tmp.11 20 42 60 ];
+        %tmp.11 = getv ? :EMOMConfigDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_19_30_21_4_stop:
+    }
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 25; @symbol_classdef = [EMOMConfigView,25,6,20]; @symbol_extends<0> = [Ui,25,29,31]; @symbol_extends<1> = [View,25,32,36]; ]
+class EMOMConfigView extends Ui.View {
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 25; ]
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 25; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 26; @position = 16; @symbol_vardef = [_rounds,26,16,23]; ]
+    private
+    var _rounds;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 27; @position = 16; @symbol_vardef = [_workTime,27,16,25]; ]
+    private
+    var _workTime;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 28; @position = 16; @symbol_vardef = [_selection,28,16,26]; ]
+    private
+    var _selection;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 30; @symbol_functiondef = [initialize,30,13,23]; ]
+    function initialize() as Void {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_30_26_35_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 31 8 ]
+        symbol [ View %tmp.2 31 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 31 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 32 8 ]
+        %tmp.4 = 10;
+        symbol [ _rounds ? 32 8 15 ];
+        putv self :_rounds %tmp.4;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 33 8 ]
+        %tmp.5 = 60;
+        symbol [ _workTime ? 33 8 17 ];
+        putv self :_workTime %tmp.5;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 34 8 ]
+        %tmp.6 = 0;
+        symbol [ _selection ? 34 8 18 ];
+        putv self :_selection %tmp.6;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_30_26_35_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 37; @symbol_functiondef = [onLayout,37,13,21]; @symbol_param<0> = [dc,37,22,24]; ]
+    function onLayout(dc) {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 40; @symbol_functiondef = [onShow,40,13,19]; ]
+    function onShow() {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 43; @symbol_functiondef = [onUpdate,43,13,21]; @symbol_param<0> = [dc,43,22,24]; ]
+    function onUpdate(dc) {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 44 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 44 8 10 ];
+        symbol [ setColor %tmp.2 44 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Gfx %tmp.3 44 20 23 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 44 24 35 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Gfx %tmp.5 44 37 40 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 44 41 52 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 45 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 45 8 10 ];
+        symbol [ clear %tmp.8 45 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 46 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 46 8 10 ];
+        symbol [ setColor %tmp.10 46 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Gfx %tmp.11 46 20 23 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.12 46 24 35 ];
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        symbol [ Gfx %tmp.13 46 37 40 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 46 41 58 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 48 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 48 12 17 ];
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 48 20 22 ];
+        symbol [ getWidth %tmp.16 48 23 31 ];
+        %tmp.16 = getv function %tmp.15 :getWidth;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %width.1 %tmp.17;
+        symbol [ width %width.1 48 12 17 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 49 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 49 12 18 ];
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 49 21 23 ];
+        symbol [ getHeight %tmp.19 49 24 33 ];
+        %tmp.19 = getv function %tmp.18 :getHeight;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %height.2 %tmp.20;
+        symbol [ height %height.2 49 12 18 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 50 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop" ]
+        %centerX.3 = local;
+        symbol [ centerX %centerX.3 50 12 19 ];
+        %tmp.21 = lgetv %width.1;
+        symbol [ width %tmp.21 50 22 27 ];
+        %tmp.22 = 2;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        lputv %centerX.3 %tmp.23;
+        symbol [ centerX %centerX.3 50 12 19 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 53 8 ]
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 53 8 10 ];
+        symbol [ drawText %tmp.25 53 11 19 ];
+        %tmp.25 = getv function %tmp.24 :drawText;
+        %tmp.26 = lgetv %centerX.3;
+        symbol [ centerX %tmp.26 53 20 27 ];
+        %tmp.27 = 10;
+        symbol [ Gfx %tmp.28 53 33 36 ];
+        %tmp.28 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.29 53 37 47 ];
+        %tmp.29 = getv %tmp.28 :FONT_SMALL;
+        %tmp.30 = "EMOM TIMER";
+        symbol [ Gfx %tmp.31 53 63 66 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.32 53 67 86 ];
+        %tmp.32 = getv %tmp.31 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.29, %tmp.30, %tmp.32);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 56 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop" ]
+        %roundsColor.4 = local;
+        symbol [ roundsColor %roundsColor.4 56 12 23 ];
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_begin:
+        symbol [ _selection %tmp.34 56 27 37 ];
+        %tmp.34 = getv ? :_selection;
+        %tmp.35 = 0;
+        %tmp.36 = eq %tmp.34 %tmp.35;
+        bf %tmp.36 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_true:
+        symbol [ Gfx %tmp.37 56 46 49 ];
+        %tmp.37 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.38 56 50 62 ];
+        %tmp.38 = getv %tmp.37 :COLOR_YELLOW;
+        push %tmp.38;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_else_false:
+        symbol [ Gfx %tmp.39 56 65 68 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.40 56 69 80 ];
+        %tmp.40 = getv %tmp.39 :COLOR_WHITE;
+        push %tmp.40;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_end:
+        %tmp.41 = phi [%tmp.36 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_begin] [%tmp.38 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_true] [%tmp.40 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_else_false] [%tmp.41 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_56_26_56_69_end];
+        lputv %roundsColor.4 %tmp.41;
+        symbol [ roundsColor %roundsColor.4 56 12 23 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 57 8 ]
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 57 8 10 ];
+        symbol [ setColor %tmp.43 57 11 19 ];
+        %tmp.43 = getv function %tmp.42 :setColor;
+        %tmp.44 = lgetv %roundsColor.4;
+        symbol [ roundsColor %tmp.44 57 20 31 ];
+        symbol [ Gfx %tmp.45 57 33 36 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.46 57 37 54 ];
+        %tmp.46 = getv %tmp.45 :COLOR_TRANSPARENT;
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.46);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 58 8 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 58 8 10 ];
+        symbol [ drawText %tmp.48 58 11 19 ];
+        %tmp.48 = getv function %tmp.47 :drawText;
+        %tmp.49 = lgetv %centerX.3;
+        symbol [ centerX %tmp.49 58 20 27 ];
+        %tmp.50 = 50;
+        symbol [ Gfx %tmp.51 58 33 36 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.52 58 37 48 ];
+        %tmp.52 = getv %tmp.51 :FONT_MEDIUM;
+        %tmp.53 = "Rounds: ";
+        symbol [ _rounds %tmp.55 58 63 70 ];
+        %tmp.55 = getv ? :_rounds;
+        %tmp.56 = add %tmp.53 %tmp.55;
+        symbol [ Gfx %tmp.57 58 72 75 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.58 58 76 95 ];
+        %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.47 %tmp.48(%tmp.49, %tmp.50, %tmp.52, %tmp.56, %tmp.58);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 61 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop" ]
+        %timeColor.5 = local;
+        symbol [ timeColor %timeColor.5 61 12 21 ];
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_begin:
+        symbol [ _selection %tmp.60 61 25 35 ];
+        %tmp.60 = getv ? :_selection;
+        %tmp.61 = 1;
+        %tmp.62 = eq %tmp.60 %tmp.61;
+        bf %tmp.62 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_true:
+        symbol [ Gfx %tmp.63 61 44 47 ];
+        %tmp.63 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.64 61 48 60 ];
+        %tmp.64 = getv %tmp.63 :COLOR_YELLOW;
+        push %tmp.64;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_else_false:
+        symbol [ Gfx %tmp.65 61 63 66 ];
+        %tmp.65 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.66 61 67 78 ];
+        %tmp.66 = getv %tmp.65 :COLOR_WHITE;
+        push %tmp.66;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_end:
+        %tmp.67 = phi [%tmp.62 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_begin] [%tmp.64 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_true] [%tmp.66 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_else_false] [%tmp.67 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_61_24_61_67_end];
+        lputv %timeColor.5 %tmp.67;
+        symbol [ timeColor %timeColor.5 61 12 21 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 62 8 ]
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 62 8 10 ];
+        symbol [ setColor %tmp.69 62 11 19 ];
+        %tmp.69 = getv function %tmp.68 :setColor;
+        %tmp.70 = lgetv %timeColor.5;
+        symbol [ timeColor %tmp.70 62 20 29 ];
+        symbol [ Gfx %tmp.71 62 31 34 ];
+        %tmp.71 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.72 62 35 52 ];
+        %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.72);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 63 8 ]
+        %tmp.73 = lgetv %dc;
+        symbol [ dc %tmp.73 63 8 10 ];
+        symbol [ drawText %tmp.74 63 11 19 ];
+        %tmp.74 = getv function %tmp.73 :drawText;
+        %tmp.75 = lgetv %centerX.3;
+        symbol [ centerX %tmp.75 63 20 27 ];
+        %tmp.76 = 90;
+        symbol [ Gfx %tmp.77 63 33 36 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.78 63 37 48 ];
+        %tmp.78 = getv %tmp.77 :FONT_MEDIUM;
+        %tmp.79 = "Time: ";
+        symbol [ _workTime %tmp.81 63 61 70 ];
+        %tmp.81 = getv ? :_workTime;
+        %tmp.82 = add %tmp.79 %tmp.81;
+        %tmp.83 = "s";
+        %tmp.84 = add %tmp.82 %tmp.83;
+        symbol [ Gfx %tmp.85 63 78 81 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.86 63 82 101 ];
+        %tmp.86 = getv %tmp.85 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.73 %tmp.74(%tmp.75, %tmp.76, %tmp.78, %tmp.84, %tmp.86);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 66 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop" ]
+        %startColor.6 = local;
+        symbol [ startColor %startColor.6 66 12 22 ];
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_begin:
+        symbol [ _selection %tmp.88 66 26 36 ];
+        %tmp.88 = getv ? :_selection;
+        %tmp.89 = 2;
+        %tmp.90 = eq %tmp.88 %tmp.89;
+        bf %tmp.90 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_true:
+        symbol [ Gfx %tmp.91 66 45 48 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.92 66 49 60 ];
+        %tmp.92 = getv %tmp.91 :COLOR_GREEN;
+        push %tmp.92;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_else_false:
+        symbol [ Gfx %tmp.93 66 63 66 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.94 66 67 78 ];
+        %tmp.94 = getv %tmp.93 :COLOR_WHITE;
+        push %tmp.94;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_end:
+        %tmp.95 = phi [%tmp.90 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_begin] [%tmp.92 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_true] [%tmp.94 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_else_false] [%tmp.95 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_66_25_66_67_end];
+        lputv %startColor.6 %tmp.95;
+        symbol [ startColor %startColor.6 66 12 22 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 67 8 ]
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 67 8 10 ];
+        symbol [ setColor %tmp.97 67 11 19 ];
+        %tmp.97 = getv function %tmp.96 :setColor;
+        %tmp.98 = lgetv %startColor.6;
+        symbol [ startColor %tmp.98 67 20 30 ];
+        symbol [ Gfx %tmp.99 67 32 35 ];
+        %tmp.99 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.100 67 36 53 ];
+        %tmp.100 = getv %tmp.99 :COLOR_TRANSPARENT;
+        invoke %tmp.96 %tmp.97(%tmp.98, %tmp.100);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 68 8 ]
+        %tmp.101 = lgetv %dc;
+        symbol [ dc %tmp.101 68 8 10 ];
+        symbol [ drawText %tmp.102 68 11 19 ];
+        %tmp.102 = getv function %tmp.101 :drawText;
+        %tmp.103 = lgetv %centerX.3;
+        symbol [ centerX %tmp.103 68 20 27 ];
+        %tmp.104 = 130;
+        symbol [ Gfx %tmp.105 68 34 37 ];
+        %tmp.105 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.106 68 38 49 ];
+        %tmp.106 = getv %tmp.105 :FONT_MEDIUM;
+        %tmp.107 = "START";
+        symbol [ Gfx %tmp.108 68 60 63 ];
+        %tmp.108 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.109 68 64 83 ];
+        %tmp.109 = getv %tmp.108 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.101 %tmp.102(%tmp.103, %tmp.104, %tmp.106, %tmp.107, %tmp.109);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 71 8 ]
+        %tmp.110 = lgetv %dc;
+        symbol [ dc %tmp.110 71 8 10 ];
+        symbol [ setColor %tmp.111 71 11 19 ];
+        %tmp.111 = getv function %tmp.110 :setColor;
+        symbol [ Gfx %tmp.112 71 20 23 ];
+        %tmp.112 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.113 71 24 37 ];
+        %tmp.113 = getv %tmp.112 :COLOR_DK_GRAY;
+        symbol [ Gfx %tmp.114 71 39 42 ];
+        %tmp.114 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.115 71 43 60 ];
+        %tmp.115 = getv %tmp.114 :COLOR_TRANSPARENT;
+        invoke %tmp.110 %tmp.111(%tmp.113, %tmp.115);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 72 8 ]
+        %tmp.116 = lgetv %dc;
+        symbol [ dc %tmp.116 72 8 10 ];
+        symbol [ drawText %tmp.117 72 11 19 ];
+        %tmp.117 = getv function %tmp.116 :drawText;
+        %tmp.118 = lgetv %centerX.3;
+        symbol [ centerX %tmp.118 72 20 27 ];
+        %tmp.119 = lgetv %height.2;
+        symbol [ height %tmp.119 72 29 35 ];
+        %tmp.120 = 30;
+        %tmp.121 = sub %tmp.119 %tmp.120;
+        symbol [ Gfx %tmp.122 72 42 45 ];
+        %tmp.122 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.123 72 46 55 ];
+        %tmp.123 = getv %tmp.122 :FONT_TINY;
+        %tmp.124 = "UP/DOWN SELECT";
+        symbol [ Gfx %tmp.125 72 75 78 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.126 72 79 98 ];
+        %tmp.126 = getv %tmp.125 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.116 %tmp.117(%tmp.118, %tmp.121, %tmp.123, %tmp.124, %tmp.126);
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_43_26_73_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 75; @symbol_functiondef = [onHide,75,13,19]; ]
+    function onHide() {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 78; @symbol_functiondef = [moveSelectionUp,78,13,28]; ]
+    function moveSelectionUp() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_78_31_81_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 79 8 ]
+        symbol [ _selection %tmp.2 79 22 32 ];
+        %tmp.2 = getv ? :_selection;
+        %tmp.3 = 1;
+        %tmp.4 = sub %tmp.2 %tmp.3;
+        %tmp.5 = 3;
+        %tmp.6 = add %tmp.4 %tmp.5;
+        %tmp.7 = 3;
+        %tmp.8 = mod %tmp.6 %tmp.7;
+        symbol [ _selection ? 79 8 18 ];
+        putv self :_selection %tmp.8;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 80 8 ]
+        symbol [ Ui %tmp.9 80 8 10 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.10 80 11 24 ];
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_78_31_81_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 83; @symbol_functiondef = [moveSelectionDown,83,13,30]; ]
+    function moveSelectionDown() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_83_33_86_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 84 8 ]
+        symbol [ _selection %tmp.2 84 22 32 ];
+        %tmp.2 = getv ? :_selection;
+        %tmp.3 = 1;
+        %tmp.4 = add %tmp.2 %tmp.3;
+        %tmp.5 = 3;
+        %tmp.6 = mod %tmp.4 %tmp.5;
+        symbol [ _selection ? 84 8 18 ];
+        putv self :_selection %tmp.6;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 85 8 ]
+        symbol [ Ui %tmp.7 85 8 10 ];
+        %tmp.7 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.8 85 11 24 ];
+        %tmp.8 = getv function %tmp.7 :requestUpdate;
+        invoke %tmp.7 %tmp.8();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_83_33_86_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 88; @symbol_functiondef = [increaseValue,88,13,26]; ]
+    function increaseValue() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_88_29_95_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 89 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_8_93_8_if_stmt:
+        symbol [ _selection %tmp.2 89 12 22 ];
+        %tmp.2 = getv ? :_selection;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_8_93_8_if_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_8_93_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_29_91_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 90 12 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_begin:
+        symbol [ _rounds %tmp.6 90 23 30 ];
+        %tmp.6 = getv ? :_rounds;
+        %tmp.7 = 60;
+        %tmp.8 = lt %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_true:
+        symbol [ _rounds %tmp.10 90 39 46 ];
+        %tmp.10 = getv ? :_rounds;
+        %tmp.11 = 1;
+        %tmp.12 = add %tmp.10 %tmp.11;
+        push %tmp.12;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_else_false:
+        %tmp.13 = 60;
+        push %tmp.13;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_end:
+        %tmp.14 = phi [%tmp.8 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_begin] [%tmp.12 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_true] [%tmp.13 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_else_false] [%tmp.14 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_90_22_90_53_end];
+        symbol [ _rounds ? 90 12 19 ];
+        putv self :_rounds %tmp.14;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_29_91_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_8_93_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_8_93_8_if_false:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 91 15 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_15_93_8_if_stmt:
+        symbol [ _selection %tmp.16 91 19 29 ];
+        %tmp.16 = getv ? :_selection;
+        %tmp.17 = 1;
+        %tmp.18 = eq %tmp.16 %tmp.17;
+        bf %tmp.18 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_15_93_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_15_93_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_36_93_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 92 12 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_begin:
+        symbol [ _workTime %tmp.20 92 25 34 ];
+        %tmp.20 = getv ? :_workTime;
+        %tmp.21 = 300;
+        %tmp.22 = lt %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_true:
+        symbol [ _workTime %tmp.24 92 44 53 ];
+        %tmp.24 = getv ? :_workTime;
+        %tmp.25 = 5;
+        %tmp.26 = add %tmp.24 %tmp.25;
+        push %tmp.26;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_else_false:
+        %tmp.27 = 300;
+        push %tmp.27;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_end:
+        %tmp.28 = phi [%tmp.22 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_begin] [%tmp.26 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_true] [%tmp.27 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_else_false] [%tmp.28 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_92_24_92_60_end];
+        symbol [ _workTime ? 92 12 21 ];
+        putv self :_workTime %tmp.28;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_36_93_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_15_93_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_91_15_93_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_89_8_93_8_if_end:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 94 8 ]
+        symbol [ Ui %tmp.29 94 8 10 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.30 94 11 24 ];
+        %tmp.30 = getv function %tmp.29 :requestUpdate;
+        invoke %tmp.29 %tmp.30();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_88_29_95_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 97; @symbol_functiondef = [decreaseValue,97,13,26]; ]
+    function decreaseValue() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_97_29_104_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 98 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_8_102_8_if_stmt:
+        symbol [ _selection %tmp.2 98 12 22 ];
+        %tmp.2 = getv ? :_selection;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_8_102_8_if_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_8_102_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_29_100_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 99 12 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_begin:
+        symbol [ _rounds %tmp.6 99 23 30 ];
+        %tmp.6 = getv ? :_rounds;
+        %tmp.7 = 1;
+        %tmp.8 = gt %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_true:
+        symbol [ _rounds %tmp.10 99 38 45 ];
+        %tmp.10 = getv ? :_rounds;
+        %tmp.11 = 1;
+        %tmp.12 = sub %tmp.10 %tmp.11;
+        push %tmp.12;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_else_false:
+        %tmp.13 = 1;
+        push %tmp.13;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_end:
+        %tmp.14 = phi [%tmp.8 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_begin] [%tmp.12 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_true] [%tmp.13 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_else_false] [%tmp.14 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_99_22_99_52_end];
+        symbol [ _rounds ? 99 12 19 ];
+        putv self :_rounds %tmp.14;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_29_100_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_8_102_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_8_102_8_if_false:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 100 15 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_15_102_8_if_stmt:
+        symbol [ _selection %tmp.16 100 19 29 ];
+        %tmp.16 = getv ? :_selection;
+        %tmp.17 = 1;
+        %tmp.18 = eq %tmp.16 %tmp.17;
+        bf %tmp.18 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_15_102_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_15_102_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_36_102_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 101 12 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_begin:
+        symbol [ _workTime %tmp.20 101 25 34 ];
+        %tmp.20 = getv ? :_workTime;
+        %tmp.21 = 10;
+        %tmp.22 = gt %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_true:
+        symbol [ _workTime %tmp.24 101 43 52 ];
+        %tmp.24 = getv ? :_workTime;
+        %tmp.25 = 5;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        push %tmp.26;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_else_false:
+        %tmp.27 = 10;
+        push %tmp.27;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_end:
+        %tmp.28 = phi [%tmp.22 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_begin] [%tmp.26 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_true] [%tmp.27 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_else_false] [%tmp.28 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_101_24_101_59_end];
+        symbol [ _workTime ? 101 12 21 ];
+        putv self :_workTime %tmp.28;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_36_102_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_15_102_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_100_15_102_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_98_8_102_8_if_end:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 103 8 ]
+        symbol [ Ui %tmp.29 103 8 10 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.30 103 11 24 ];
+        %tmp.30 = getv function %tmp.29 :requestUpdate;
+        invoke %tmp.29 %tmp.30();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_97_29_104_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 106; @symbol_functiondef = [startTimer,106,13,23]; ]
+    function startTimer() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_106_26_110_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 107 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_8_109_8_if_stmt:
+        symbol [ _selection %tmp.2 107 12 22 ];
+        %tmp.2 = getv ? :_selection;
+        %tmp.3 = 2;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_8_109_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_8_109_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_29_109_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 108 12 ]
+        symbol [ Ui %tmp.5 108 12 14 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.6 108 15 23 ];
+        %tmp.6 = getv function %tmp.5 :pushView;
+        symbol [ EMOMTimerView %tmp.10 108 28 41 ];
+        %tmp.10 = getv ? :EMOMTimerView;
+        symbol [ _rounds %tmp.12 108 42 49 ];
+        %tmp.12 = getv ? :_rounds;
+        symbol [ _workTime %tmp.14 108 51 60 ];
+        %tmp.14 = getv ? :_workTime;
+        %tmp.7 = newc %tmp.10 (%tmp.12, %tmp.14);
+        symbol [ EMOMTimerDelegate %tmp.18 108 67 84 ];
+        %tmp.18 = getv ? :EMOMTimerDelegate;
+        %tmp.15 = newc %tmp.18 ();
+        symbol [ Ui %tmp.19 108 88 90 ];
+        %tmp.19 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.20 108 91 101 ];
+        %tmp.20 = getv %tmp.19 :SLIDE_LEFT;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.15, %tmp.20);
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_29_109_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_8_109_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_107_8_109_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_106_26_110_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 112; @symbol_functiondef = [getRounds,112,13,22]; ]
+    function getRounds() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_112_25_114_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 113 8 ]
+        symbol [ _rounds %tmp.2 113 15 22 ];
+        %tmp.2 = getv ? :_rounds;
+        ret %tmp.2;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_112_25_114_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 116; @symbol_functiondef = [getWorkTime,116,13,24]; ]
+    function getWorkTime() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_116_27_118_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 117 8 ]
+        symbol [ _workTime %tmp.2 117 15 24 ];
+        %tmp.2 = getv ? :_workTime;
+        ret %tmp.2;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_116_27_118_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 120; @symbol_functiondef = [getSelection,120,13,25]; ]
+    function getSelection() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_120_28_122_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 121 8 ]
+        symbol [ _selection %tmp.2 121 15 25 ];
+        %tmp.2 = getv ? :_selection;
+        ret %tmp.2;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_120_28_122_4_stop:
+    }
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 126; @symbol_classdef = [EMOMConfigDelegate,126,6,24]; @symbol_extends<0> = [Ui,126,33,35]; @symbol_extends<1> = [BehaviorDelegate,126,36,52]; ]
+class EMOMConfigDelegate extends Ui.BehaviorDelegate {
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 126; ]
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 126; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 127; @symbol_functiondef = [initialize,127,13,23]; ]
+    function initialize() as Void {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_127_26_129_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 128 8 ]
+        symbol [ BehaviorDelegate %tmp.2 128 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 128 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_127_26_129_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 131; @symbol_functiondef = [onNextPage,131,13,23]; ]
+    function onNextPage() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_131_26_135_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 132 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_131_26_135_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_131_26_135_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 132 12 16 ];
+        symbol [ Ui %tmp.1 132 19 21 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.2 132 22 36 ];
+        %tmp.2 = getv function %tmp.1 :getCurrentView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = agetv %tmp.3 %tmp.4;
+        %tmp.6 = as %tmp.5 EMOMConfigView;
+        symbol [ EMOMConfigView %tmp.6 132 45 59 ];
+        lputv %view.1 %tmp.6;
+        symbol [ view %view.1 132 12 16 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 133 8 ]
+        %tmp.7 = lgetv %view.1;
+        symbol [ view %tmp.7 133 8 12 ];
+        symbol [ moveSelectionDown %tmp.8 133 13 30 ];
+        %tmp.8 = getv function %tmp.7 :moveSelectionDown;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 134 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_131_26_135_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 137; @symbol_functiondef = [onPreviousPage,137,13,27]; ]
+    function onPreviousPage() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_137_30_141_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 138 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_137_30_141_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_137_30_141_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 138 12 16 ];
+        symbol [ Ui %tmp.1 138 19 21 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.2 138 22 36 ];
+        %tmp.2 = getv function %tmp.1 :getCurrentView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = agetv %tmp.3 %tmp.4;
+        %tmp.6 = as %tmp.5 EMOMConfigView;
+        symbol [ EMOMConfigView %tmp.6 138 45 59 ];
+        lputv %view.1 %tmp.6;
+        symbol [ view %view.1 138 12 16 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 139 8 ]
+        %tmp.7 = lgetv %view.1;
+        symbol [ view %tmp.7 139 8 12 ];
+        symbol [ moveSelectionUp %tmp.8 139 13 28 ];
+        %tmp.8 = getv function %tmp.7 :moveSelectionUp;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 140 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_137_30_141_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 143; @symbol_functiondef = [onKey,143,13,18]; @symbol_param<0> = [keyEvent,143,19,27]; ]
+    function onKey(keyEvent) {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_143_29_158_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 144 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_143_29_158_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_143_29_158_4_stop" ]
+        %key.1 = local;
+        symbol [ key %key.1 144 12 15 ];
+        %tmp.1 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.1 144 18 26 ];
+        symbol [ getKey %tmp.2 144 27 33 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %key.1 %tmp.3;
+        symbol [ key %key.1 144 12 15 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 145 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_143_29_158_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_143_29_158_4_stop" ]
+        %view.2 = local;
+        symbol [ view %view.2 145 12 16 ];
+        symbol [ Ui %tmp.4 145 19 21 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.5 145 22 36 ];
+        %tmp.5 = getv function %tmp.4 :getCurrentView;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 0;
+        %tmp.8 = agetv %tmp.6 %tmp.7;
+        %tmp.9 = as %tmp.8 EMOMConfigView;
+        symbol [ EMOMConfigView %tmp.9 145 45 59 ];
+        lputv %view.2 %tmp.9;
+        symbol [ view %view.2 145 12 16 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 147 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_8_156_8_if_stmt:
+        %tmp.10 = lgetv %key.1;
+        symbol [ key %tmp.10 147 12 15 ];
+        symbol [ Ui %tmp.11 147 19 21 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ KEY_UP %tmp.12 147 22 28 ];
+        %tmp.12 = getv %tmp.11 :KEY_UP;
+        %tmp.13 = eq %tmp.10 %tmp.12;
+        bf %tmp.13 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_8_156_8_if_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_8_156_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_30_150_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 148 12 ]
+        %tmp.14 = lgetv %view.2;
+        symbol [ view %tmp.14 148 12 16 ];
+        symbol [ decreaseValue %tmp.15 148 17 30 ];
+        %tmp.15 = getv function %tmp.14 :decreaseValue;
+        invoke %tmp.14 %tmp.15();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 149 12 ]
+        %tmp.16 = true;
+        ret %tmp.16;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_30_150_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_8_156_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_8_156_8_if_false:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 150 15 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_15_156_8_if_stmt:
+        %tmp.17 = lgetv %key.1;
+        symbol [ key %tmp.17 150 19 22 ];
+        symbol [ Ui %tmp.18 150 26 28 ];
+        %tmp.18 = getm $.Toybox.WatchUi;
+        symbol [ KEY_DOWN %tmp.19 150 29 37 ];
+        %tmp.19 = getv %tmp.18 :KEY_DOWN;
+        %tmp.20 = eq %tmp.17 %tmp.19;
+        bf %tmp.20 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_15_156_8_if_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_15_156_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_39_153_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 151 12 ]
+        %tmp.21 = lgetv %view.2;
+        symbol [ view %tmp.21 151 12 16 ];
+        symbol [ increaseValue %tmp.22 151 17 30 ];
+        %tmp.22 = getv function %tmp.21 :increaseValue;
+        invoke %tmp.21 %tmp.22();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 152 12 ]
+        %tmp.23 = true;
+        ret %tmp.23;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_39_153_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_15_156_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_15_156_8_if_false:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 153 15 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_15_156_8_if_stmt:
+        %tmp.24 = lgetv %key.1;
+        symbol [ key %tmp.24 153 19 22 ];
+        symbol [ Ui %tmp.25 153 26 28 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.26 153 29 38 ];
+        %tmp.26 = getv %tmp.25 :KEY_ENTER;
+        %tmp.27 = eq %tmp.24 %tmp.26;
+        bf %tmp.27 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_15_156_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_15_156_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_40_156_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 154 12 ]
+        %tmp.28 = lgetv %view.2;
+        symbol [ view %tmp.28 154 12 16 ];
+        symbol [ startTimer %tmp.29 154 17 27 ];
+        %tmp.29 = getv function %tmp.28 :startTimer;
+        invoke %tmp.28 %tmp.29();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 155 12 ]
+        %tmp.30 = true;
+        ret %tmp.30;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_40_156_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_15_156_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_153_15_156_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_150_15_156_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_147_8_156_8_if_end:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 157 8 ]
+        %tmp.31 = false;
+        ret %tmp.31;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_143_29_158_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 160; @symbol_functiondef = [onSelect,160,13,21]; ]
+    function onSelect() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_160_24_164_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 161 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_160_24_164_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_160_24_164_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 161 12 16 ];
+        symbol [ Ui %tmp.1 161 19 21 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.2 161 22 36 ];
+        %tmp.2 = getv function %tmp.1 :getCurrentView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = agetv %tmp.3 %tmp.4;
+        %tmp.6 = as %tmp.5 EMOMConfigView;
+        symbol [ EMOMConfigView %tmp.6 161 45 59 ];
+        lputv %view.1 %tmp.6;
+        symbol [ view %view.1 161 12 16 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 162 8 ]
+        %tmp.7 = lgetv %view.1;
+        symbol [ view %tmp.7 162 8 12 ];
+        symbol [ startTimer %tmp.8 162 13 23 ];
+        %tmp.8 = getv function %tmp.7 :startTimer;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 163 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_160_24_164_4_stop:
+    }
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 168; @symbol_classdef = [EMOMTimerView,168,6,19]; @symbol_extends<0> = [Ui,168,28,30]; @symbol_extends<1> = [View,168,31,35]; ]
+class EMOMTimerView extends Ui.View {
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 168; ]
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 168; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 169; @position = 16; @symbol_vardef = [_totalRounds,169,16,28]; ]
+    private
+    var _totalRounds;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 170; @position = 16; @symbol_vardef = [_currentRound,170,16,29]; ]
+    private
+    var _currentRound;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 171; @position = 16; @symbol_vardef = [_workTime,171,16,25]; ]
+    private
+    var _workTime;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 172; @position = 16; @symbol_vardef = [_timeRemaining,172,16,30]; ]
+    private
+    var _timeRemaining;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 173; @position = 16; @symbol_vardef = [_timer,173,16,22]; ]
+    private
+    var _timer;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 174; @position = 16; @symbol_vardef = [_isRunning,174,16,26]; ]
+    private
+    var _isRunning;
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 176; @symbol_functiondef = [initialize,176,13,23]; @symbol_param<0> = [rounds,176,24,30]; @symbol_param<1> = [workTime,176,32,40]; ]
+    function initialize(rounds, workTime) as Void {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_176_42_186_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 177 8 ]
+        symbol [ View %tmp.2 177 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 177 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 178 8 ]
+        %tmp.4 = lgetv %rounds;
+        symbol [ rounds %tmp.4 178 23 29 ];
+        symbol [ _totalRounds ? 178 8 20 ];
+        putv self :_totalRounds %tmp.4;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 179 8 ]
+        %tmp.5 = 1;
+        symbol [ _currentRound ? 179 8 21 ];
+        putv self :_currentRound %tmp.5;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 180 8 ]
+        %tmp.6 = lgetv %workTime;
+        symbol [ workTime %tmp.6 180 20 28 ];
+        symbol [ _workTime ? 180 8 17 ];
+        putv self :_workTime %tmp.6;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 181 8 ]
+        %tmp.7 = lgetv %workTime;
+        symbol [ workTime %tmp.7 181 25 33 ];
+        symbol [ _timeRemaining ? 181 8 22 ];
+        putv self :_timeRemaining %tmp.7;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 182 8 ]
+        %tmp.8 = true;
+        symbol [ _isRunning ? 182 8 18 ];
+        putv self :_isRunning %tmp.8;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 184 8 ]
+        symbol [ Timer %tmp.11 184 21 26 ];
+        %tmp.11 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.12 184 27 32 ];
+        %tmp.12 = getv function ? %tmp.11 :Timer;
+        %tmp.9 = newc %tmp.12 ();
+        symbol [ _timer ? 184 8 14 ];
+        putv self :_timer %tmp.9;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 185 8 ]
+        symbol [ _timer %tmp.14 185 8 14 ];
+        %tmp.14 = getv ? :_timer;
+        symbol [ start %tmp.15 185 15 20 ];
+        %tmp.15 = getv function %tmp.14 :start;
+        %tmp.16 = self;
+        symbol [ method %tmp.17 185 21 27 ];
+        %tmp.17 = getv function %tmp.16 :method;
+        %tmp.19 = const :timerCallback;
+        symbol [ timerCallback %tmp.19 185 29 42 const ];
+        %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.19);
+        %tmp.21 = as %tmp.20 (callback() as Void);
+        %tmp.22 = 1000;
+        %tmp.23 = true;
+        invoke %tmp.14 %tmp.15(%tmp.21, %tmp.22, %tmp.23);
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_176_42_186_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 188; @symbol_functiondef = [timerCallback,188,13,26]; ]
+    function timerCallback() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_188_29_206_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 189 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_8_205_8_if_stmt:
+        symbol [ _isRunning %tmp.2 189 12 22 ];
+        %tmp.2 = getv ? :_isRunning;
+        bf %tmp.2 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_8_205_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_8_205_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_24_205_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 190 12 ]
+        symbol [ _timeRemaining %tmp.5 190 12 26 ];
+        %tmp.5 = getv ? :_timeRemaining;
+        %tmp.6 = sub %tmp.5 1;
+        symbol [ _timeRemaining ? 190 12 26 ];
+        putv self :_timeRemaining dup %tmp.6;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 192 12 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_12_203_12_if_stmt:
+        symbol [ _timeRemaining %tmp.8 192 16 30 ];
+        %tmp.8 = getv ? :_timeRemaining;
+        %tmp.9 = 0;
+        %tmp.10 = lte %tmp.8 %tmp.9;
+        bf %tmp.10 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_12_203_12_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_12_203_12_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_37_203_12_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 194 16 ]
+        %tmp.11 = self;
+        symbol [ vibrateAlert %tmp.12 194 16 28 ];
+        %tmp.12 = getv function %tmp.11 :vibrateAlert;
+        invoke %tmp.11 %tmp.12();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 196 16 ]
+        symbol [ _currentRound %tmp.15 196 16 29 ];
+        %tmp.15 = getv ? :_currentRound;
+        %tmp.16 = add %tmp.15 1;
+        symbol [ _currentRound ? 196 16 29 ];
+        putv self :_currentRound dup %tmp.16;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 197 16 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_16_202_16_if_stmt:
+        symbol [ _currentRound %tmp.18 197 20 33 ];
+        %tmp.18 = getv ? :_currentRound;
+        symbol [ _totalRounds %tmp.20 197 36 48 ];
+        %tmp.20 = getv ? :_totalRounds;
+        %tmp.21 = gt %tmp.18 %tmp.20;
+        bf %tmp.21 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_16_202_16_if_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_16_202_16_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_50_200_16_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 198 20 ]
+        %tmp.22 = false;
+        symbol [ _isRunning ? 198 20 30 ];
+        putv self :_isRunning %tmp.22;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 199 20 ]
+        symbol [ _timer %tmp.24 199 20 26 ];
+        %tmp.24 = getv ? :_timer;
+        symbol [ stop %tmp.25 199 27 31 ];
+        %tmp.25 = getv function %tmp.24 :stop;
+        invoke %tmp.24 %tmp.25();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_50_200_16_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_16_202_16_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_16_202_16_if_else_false:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_200_23_202_16_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 201 20 ]
+        symbol [ _workTime %tmp.27 201 37 46 ];
+        %tmp.27 = getv ? :_workTime;
+        symbol [ _timeRemaining ? 201 20 34 ];
+        putv self :_timeRemaining %tmp.27;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_200_23_202_16_stop:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_197_16_202_16_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_37_203_12_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_12_203_12_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_192_12_203_12_if_end:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 204 12 ]
+        symbol [ Ui %tmp.28 204 12 14 ];
+        %tmp.28 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.29 204 15 28 ];
+        %tmp.29 = getv function %tmp.28 :requestUpdate;
+        invoke %tmp.28 %tmp.29();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_24_205_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_8_205_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_189_8_205_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_188_29_206_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 208; @symbol_functiondef = [vibrateAlert,208,13,25]; ]
+    function vibrateAlert() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_208_28_213_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 209 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_8_212_8_if_stmt:
+        symbol [ Attention %tmp.1 209 12 21 ];
+        %tmp.1 = getm $.Toybox.Attention;
+        %tmp.3 = const :vibrate;
+        symbol [ vibrate %tmp.3 209 27 34 const ];
+        %tmp.4 = canhazplz %tmp.1 %tmp.3;
+        bf %tmp.4 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_8_212_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_8_212_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_36_212_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 210 12 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_36_212_8_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_36_212_8_stop" ]
+        %vibeData.1 = local;
+        symbol [ vibeData %vibeData.1 210 16 24 ];
+        %tmp.5 = newa 1;
+        symbol [ Attention %tmp.8 210 32 41 ];
+        %tmp.8 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.9 210 42 53 ];
+        %tmp.9 = getv function ? %tmp.8 :VibeProfile;
+        %tmp.10 = 50;
+        %tmp.11 = 200;
+        %tmp.6 = newc %tmp.9 (%tmp.10, %tmp.11);
+        %tmp.12 = dup %tmp.5;
+        %tmp.13 = aputv %tmp.12 0 %tmp.6;
+        lputv %vibeData.1 %tmp.13;
+        symbol [ vibeData %vibeData.1 210 16 24 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 211 12 ]
+        symbol [ Attention %tmp.14 211 12 21 ];
+        %tmp.14 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.15 211 22 29 ];
+        %tmp.15 = getv function %tmp.14 :vibrate;
+        %tmp.16 = lgetv %vibeData.1;
+        symbol [ vibeData %tmp.16 211 30 38 ];
+        invoke %tmp.14 %tmp.15(%tmp.16);
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_36_212_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_8_212_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_209_8_212_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_208_28_213_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 215; @symbol_functiondef = [onUpdate,215,13,21]; @symbol_param<0> = [dc,215,22,24]; ]
+    function onUpdate(dc) {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 216 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 216 8 10 ];
+        symbol [ setColor %tmp.2 216 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Gfx %tmp.3 216 20 23 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 216 24 35 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Gfx %tmp.5 216 37 40 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 216 41 52 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 217 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 217 8 10 ];
+        symbol [ clear %tmp.8 217 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 219 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 219 12 17 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 219 20 22 ];
+        symbol [ getWidth %tmp.10 219 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %width.1 %tmp.11;
+        symbol [ width %width.1 219 12 17 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 220 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 220 12 18 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 220 21 23 ];
+        symbol [ getHeight %tmp.13 220 24 33 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %height.2 %tmp.14;
+        symbol [ height %height.2 220 12 18 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 221 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_stop" ]
+        %centerX.3 = local;
+        symbol [ centerX %centerX.3 221 12 19 ];
+        %tmp.15 = lgetv %width.1;
+        symbol [ width %tmp.15 221 22 27 ];
+        %tmp.16 = 2;
+        %tmp.17 = div %tmp.15 %tmp.16;
+        lputv %centerX.3 %tmp.17;
+        symbol [ centerX %centerX.3 221 12 19 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 222 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_stop" ]
+        %centerY.4 = local;
+        symbol [ centerY %centerY.4 222 12 19 ];
+        %tmp.18 = lgetv %height.2;
+        symbol [ height %tmp.18 222 22 28 ];
+        %tmp.19 = 2;
+        %tmp.20 = div %tmp.18 %tmp.19;
+        lputv %centerY.4 %tmp.20;
+        symbol [ centerY %centerY.4 222 12 19 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 224 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_8_230_8_if_stmt:
+        symbol [ _isRunning %tmp.22 224 13 23 ];
+        %tmp.22 = getv ? :_isRunning;
+        %tmp.23 = not %tmp.22;
+        bf %tmp.23 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_8_230_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_8_230_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_25_230_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 225 12 ]
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 225 12 14 ];
+        symbol [ setColor %tmp.25 225 15 23 ];
+        %tmp.25 = getv function %tmp.24 :setColor;
+        symbol [ Gfx %tmp.26 225 24 27 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.27 225 28 39 ];
+        %tmp.27 = getv %tmp.26 :COLOR_GREEN;
+        symbol [ Gfx %tmp.28 225 41 44 ];
+        %tmp.28 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.29 225 45 62 ];
+        %tmp.29 = getv %tmp.28 :COLOR_TRANSPARENT;
+        invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 226 12 ]
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 226 12 14 ];
+        symbol [ drawText %tmp.31 226 15 23 ];
+        %tmp.31 = getv function %tmp.30 :drawText;
+        %tmp.32 = lgetv %centerX.3;
+        symbol [ centerX %tmp.32 226 24 31 ];
+        %tmp.33 = lgetv %centerY.4;
+        symbol [ centerY %tmp.33 226 33 40 ];
+        %tmp.34 = 20;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        symbol [ Gfx %tmp.36 226 47 50 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.37 226 51 61 ];
+        %tmp.37 = getv %tmp.36 :FONT_LARGE;
+        %tmp.38 = "COMPLETE!";
+        symbol [ Gfx %tmp.39 226 76 79 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.40 226 80 99 ];
+        %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.30 %tmp.31(%tmp.32, %tmp.35, %tmp.37, %tmp.38, %tmp.40);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 227 12 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 227 12 14 ];
+        symbol [ setColor %tmp.42 227 15 23 ];
+        %tmp.42 = getv function %tmp.41 :setColor;
+        symbol [ Gfx %tmp.43 227 24 27 ];
+        %tmp.43 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.44 227 28 39 ];
+        %tmp.44 = getv %tmp.43 :COLOR_WHITE;
+        symbol [ Gfx %tmp.45 227 41 44 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.46 227 45 62 ];
+        %tmp.46 = getv %tmp.45 :COLOR_TRANSPARENT;
+        invoke %tmp.41 %tmp.42(%tmp.44, %tmp.46);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 228 12 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 228 12 14 ];
+        symbol [ drawText %tmp.48 228 15 23 ];
+        %tmp.48 = getv function %tmp.47 :drawText;
+        %tmp.49 = lgetv %centerX.3;
+        symbol [ centerX %tmp.49 228 24 31 ];
+        %tmp.50 = lgetv %centerY.4;
+        symbol [ centerY %tmp.50 228 33 40 ];
+        %tmp.51 = 30;
+        %tmp.52 = add %tmp.50 %tmp.51;
+        symbol [ Gfx %tmp.53 228 47 50 ];
+        %tmp.53 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.54 228 51 61 ];
+        %tmp.54 = getv %tmp.53 :FONT_SMALL;
+        %tmp.55 = "Press BACK";
+        symbol [ Gfx %tmp.56 228 77 80 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.57 228 81 100 ];
+        %tmp.57 = getv %tmp.56 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.47 %tmp.48(%tmp.49, %tmp.52, %tmp.54, %tmp.55, %tmp.57);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 229 12 ]
+        ret ?;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_25_230_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_8_230_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_224_8_230_8_if_end:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 233 8 ]
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 233 8 10 ];
+        symbol [ setColor %tmp.59 233 11 19 ];
+        %tmp.59 = getv function %tmp.58 :setColor;
+        symbol [ Gfx %tmp.60 233 20 23 ];
+        %tmp.60 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.61 233 24 35 ];
+        %tmp.61 = getv %tmp.60 :COLOR_WHITE;
+        symbol [ Gfx %tmp.62 233 37 40 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.63 233 41 58 ];
+        %tmp.63 = getv %tmp.62 :COLOR_TRANSPARENT;
+        invoke %tmp.58 %tmp.59(%tmp.61, %tmp.63);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 234 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 234 8 10 ];
+        symbol [ drawText %tmp.65 234 11 19 ];
+        %tmp.65 = getv function %tmp.64 :drawText;
+        %tmp.66 = lgetv %centerX.3;
+        symbol [ centerX %tmp.66 234 20 27 ];
+        %tmp.67 = 20;
+        symbol [ Gfx %tmp.68 234 33 36 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.69 234 37 47 ];
+        %tmp.69 = getv %tmp.68 :FONT_SMALL;
+        %tmp.70 = "Round ";
+        symbol [ _currentRound %tmp.72 234 60 73 ];
+        %tmp.72 = getv ? :_currentRound;
+        %tmp.73 = add %tmp.70 %tmp.72;
+        %tmp.74 = "/";
+        %tmp.75 = add %tmp.73 %tmp.74;
+        symbol [ _totalRounds %tmp.77 234 82 94 ];
+        %tmp.77 = getv ? :_totalRounds;
+        %tmp.78 = add %tmp.75 %tmp.77;
+        symbol [ Gfx %tmp.79 234 96 99 ];
+        %tmp.79 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.80 234 100 119 ];
+        %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.64 %tmp.65(%tmp.66, %tmp.67, %tmp.69, %tmp.78, %tmp.80);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 237 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_stop" ]
+        %timeColor.5 = local;
+        symbol [ timeColor %timeColor.5 237 12 21 ];
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_begin:
+        symbol [ _timeRemaining %tmp.82 237 25 39 ];
+        %tmp.82 = getv ? :_timeRemaining;
+        %tmp.83 = 5;
+        %tmp.84 = lte %tmp.82 %tmp.83;
+        bf %tmp.84 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_else_false;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_true:
+        symbol [ Gfx %tmp.85 237 48 51 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.86 237 52 61 ];
+        %tmp.86 = getv %tmp.85 :COLOR_RED;
+        push %tmp.86;
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_else_false:
+        symbol [ Gfx %tmp.87 237 64 67 ];
+        %tmp.87 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.88 237 68 79 ];
+        %tmp.88 = getv %tmp.87 :COLOR_GREEN;
+        push %tmp.88;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_end:
+        %tmp.89 = phi [%tmp.84 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_begin] [%tmp.86 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_true] [%tmp.88 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_else_false] [%tmp.89 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_237_24_237_68_end];
+        lputv %timeColor.5 %tmp.89;
+        symbol [ timeColor %timeColor.5 237 12 21 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 238 8 ]
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 238 8 10 ];
+        symbol [ setColor %tmp.91 238 11 19 ];
+        %tmp.91 = getv function %tmp.90 :setColor;
+        %tmp.92 = lgetv %timeColor.5;
+        symbol [ timeColor %tmp.92 238 20 29 ];
+        symbol [ Gfx %tmp.93 238 31 34 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.94 238 35 52 ];
+        %tmp.94 = getv %tmp.93 :COLOR_TRANSPARENT;
+        invoke %tmp.90 %tmp.91(%tmp.92, %tmp.94);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 239 8 ]
+        %tmp.95 = lgetv %dc;
+        symbol [ dc %tmp.95 239 8 10 ];
+        symbol [ drawText %tmp.96 239 11 19 ];
+        %tmp.96 = getv function %tmp.95 :drawText;
+        %tmp.97 = lgetv %centerX.3;
+        symbol [ centerX %tmp.97 239 20 27 ];
+        %tmp.98 = lgetv %centerY.4;
+        symbol [ centerY %tmp.98 239 29 36 ];
+        %tmp.99 = 30;
+        %tmp.100 = sub %tmp.98 %tmp.99;
+        symbol [ Gfx %tmp.101 239 43 46 ];
+        %tmp.101 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_HOT %tmp.102 239 47 62 ];
+        %tmp.102 = getv %tmp.101 :FONT_NUMBER_HOT;
+        symbol [ _timeRemaining %tmp.104 239 64 78 ];
+        %tmp.104 = getv ? :_timeRemaining;
+        symbol [ format %tmp.105 239 79 85 ];
+        %tmp.105 = getv function %tmp.104 :format;
+        %tmp.106 = "%d";
+        %tmp.107 = invoke %tmp.104 %tmp.105(%tmp.106);
+        symbol [ Gfx %tmp.108 239 93 96 ];
+        %tmp.108 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.109 239 97 116 ];
+        %tmp.109 = getv %tmp.108 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.95 %tmp.96(%tmp.97, %tmp.100, %tmp.102, %tmp.107, %tmp.109);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 242 8 ]
+        %tmp.110 = lgetv %dc;
+        symbol [ dc %tmp.110 242 8 10 ];
+        symbol [ setColor %tmp.111 242 11 19 ];
+        %tmp.111 = getv function %tmp.110 :setColor;
+        symbol [ Gfx %tmp.112 242 20 23 ];
+        %tmp.112 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.113 242 24 35 ];
+        %tmp.113 = getv %tmp.112 :COLOR_WHITE;
+        symbol [ Gfx %tmp.114 242 37 40 ];
+        %tmp.114 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.115 242 41 58 ];
+        %tmp.115 = getv %tmp.114 :COLOR_TRANSPARENT;
+        invoke %tmp.110 %tmp.111(%tmp.113, %tmp.115);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 243 8 ]
+        %tmp.116 = lgetv %dc;
+        symbol [ dc %tmp.116 243 8 10 ];
+        symbol [ drawText %tmp.117 243 11 19 ];
+        %tmp.117 = getv function %tmp.116 :drawText;
+        %tmp.118 = lgetv %centerX.3;
+        symbol [ centerX %tmp.118 243 20 27 ];
+        %tmp.119 = lgetv %centerY.4;
+        symbol [ centerY %tmp.119 243 29 36 ];
+        %tmp.120 = 20;
+        %tmp.121 = add %tmp.119 %tmp.120;
+        symbol [ Gfx %tmp.122 243 43 46 ];
+        %tmp.122 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.123 243 47 57 ];
+        %tmp.123 = getv %tmp.122 :FONT_SMALL;
+        %tmp.124 = "seconds";
+        symbol [ Gfx %tmp.125 243 70 73 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.126 243 74 93 ];
+        %tmp.126 = getv %tmp.125 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.116 %tmp.117(%tmp.118, %tmp.121, %tmp.123, %tmp.124, %tmp.126);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 246 8 ]
+        %tmp.127 = lgetv %dc;
+        symbol [ dc %tmp.127 246 8 10 ];
+        symbol [ setColor %tmp.128 246 11 19 ];
+        %tmp.128 = getv function %tmp.127 :setColor;
+        symbol [ Gfx %tmp.129 246 20 23 ];
+        %tmp.129 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.130 246 24 37 ];
+        %tmp.130 = getv %tmp.129 :COLOR_DK_GRAY;
+        symbol [ Gfx %tmp.131 246 39 42 ];
+        %tmp.131 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.132 246 43 60 ];
+        %tmp.132 = getv %tmp.131 :COLOR_TRANSPARENT;
+        invoke %tmp.127 %tmp.128(%tmp.130, %tmp.132);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 247 8 ]
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 247 8 10 ];
+        symbol [ drawText %tmp.134 247 11 19 ];
+        %tmp.134 = getv function %tmp.133 :drawText;
+        %tmp.135 = lgetv %centerX.3;
+        symbol [ centerX %tmp.135 247 20 27 ];
+        %tmp.136 = lgetv %height.2;
+        symbol [ height %tmp.136 247 29 35 ];
+        %tmp.137 = 30;
+        %tmp.138 = sub %tmp.136 %tmp.137;
+        symbol [ Gfx %tmp.139 247 42 45 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.140 247 46 55 ];
+        %tmp.140 = getv %tmp.139 :FONT_TINY;
+        %tmp.141 = "SELECT: PAUSE";
+        symbol [ Gfx %tmp.142 247 74 77 ];
+        %tmp.142 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.143 247 78 97 ];
+        %tmp.143 = getv %tmp.142 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.133 %tmp.134(%tmp.135, %tmp.138, %tmp.140, %tmp.141, %tmp.143);
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_215_26_248_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 250; @symbol_functiondef = [togglePause,250,13,24]; ]
+    function togglePause() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_250_27_253_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 251 8 ]
+        symbol [ _isRunning %tmp.2 251 22 32 ];
+        %tmp.2 = getv ? :_isRunning;
+        %tmp.3 = not %tmp.2;
+        symbol [ _isRunning ? 251 8 18 ];
+        putv self :_isRunning %tmp.3;
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 252 8 ]
+        symbol [ Ui %tmp.4 252 8 10 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.5 252 11 24 ];
+        %tmp.5 = getv function %tmp.4 :requestUpdate;
+        invoke %tmp.4 %tmp.5();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_250_27_253_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 255; @symbol_functiondef = [stopTimer,255,13,22]; ]
+    function stopTimer() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_255_25_259_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 256 8 ]
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_8_258_8_if_stmt:
+        symbol [ _timer %tmp.2 256 12 18 ];
+        %tmp.2 = getv ? :_timer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_8_258_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_8_258_8_if_true:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_28_258_8_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 257 12 ]
+        symbol [ _timer %tmp.6 257 12 18 ];
+        %tmp.6 = getv ? :_timer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 257 19 23 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_28_258_8_stop:
+        goto @_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_8_258_8_if_end;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_256_8_258_8_if_end:
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_255_25_259_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 261; @symbol_functiondef = [onHide,261,13,19]; ]
+    function onHide() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_261_22_263_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 262 8 ]
+        %tmp.1 = self;
+        symbol [ stopTimer %tmp.2 262 8 17 ];
+        %tmp.2 = getv function %tmp.1 :stopTimer;
+        invoke %tmp.1 %tmp.2();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_261_22_263_4_stop:
+    }
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 267; @symbol_classdef = [EMOMTimerDelegate,267,6,23]; @symbol_extends<0> = [Ui,267,32,34]; @symbol_extends<1> = [BehaviorDelegate,267,35,51]; ]
+class EMOMTimerDelegate extends Ui.BehaviorDelegate {
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 267; ]
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 267; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 268; @symbol_functiondef = [initialize,268,13,23]; ]
+    function initialize() as Void {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_268_26_270_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 269 8 ]
+        symbol [ BehaviorDelegate %tmp.2 269 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 269 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_268_26_270_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 272; @symbol_functiondef = [onSelect,272,13,21]; ]
+    function onSelect() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_272_24_276_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 273 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_272_24_276_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_272_24_276_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 273 12 16 ];
+        symbol [ Ui %tmp.1 273 19 21 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.2 273 22 36 ];
+        %tmp.2 = getv function %tmp.1 :getCurrentView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = agetv %tmp.3 %tmp.4;
+        %tmp.6 = as %tmp.5 EMOMTimerView;
+        symbol [ EMOMTimerView %tmp.6 273 45 58 ];
+        lputv %view.1 %tmp.6;
+        symbol [ view %view.1 273 12 16 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 274 8 ]
+        %tmp.7 = lgetv %view.1;
+        symbol [ view %tmp.7 274 8 12 ];
+        symbol [ togglePause %tmp.8 274 13 24 ];
+        %tmp.8 = getv function %tmp.7 :togglePause;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 275 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_272_24_276_4_stop:
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 278; @symbol_functiondef = [onBack,278,13,19]; ]
+    function onBack() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_278_22_283_4_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 279 8 ]
+        [ "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_278_22_283_4_start" "_Users_nathancrum_src_garmin_emom_timer_source_main_mc_278_22_283_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 279 12 16 ];
+        symbol [ Ui %tmp.1 279 19 21 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.2 279 22 36 ];
+        %tmp.2 = getv function %tmp.1 :getCurrentView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = agetv %tmp.3 %tmp.4;
+        %tmp.6 = as %tmp.5 EMOMTimerView;
+        symbol [ EMOMTimerView %tmp.6 279 45 58 ];
+        lputv %view.1 %tmp.6;
+        symbol [ view %view.1 279 12 16 ];
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 280 8 ]
+        %tmp.7 = lgetv %view.1;
+        symbol [ view %tmp.7 280 8 12 ];
+        symbol [ stopTimer %tmp.8 280 13 22 ];
+        %tmp.8 = getv function %tmp.7 :stopTimer;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 281 8 ]
+        symbol [ Ui %tmp.9 281 8 10 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.10 281 11 18 ];
+        %tmp.10 = getv function %tmp.9 :popView;
+        symbol [ Ui %tmp.11 281 19 21 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.12 281 22 33 ];
+        %tmp.12 = getv %tmp.11 :SLIDE_RIGHT;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 282 8 ]
+        %tmp.13 = true;
+        ret %tmp.13;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_278_22_283_4_stop:
+    }
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 286; @symbol_functiondef = [getApp,286,9,15]; ]
+function getApp() {
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_286_18_288_0_start:
+[ "/Users/nathancrum/src/garmin/emom_timer/source/main.mc" 287 4 ]
+    symbol [ App %tmp.1 287 11 14 ];
+    %tmp.1 = getm $.Toybox.Application;
+    symbol [ getApp %tmp.2 287 15 21 ];
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    ret %tmp.3;
+_Users_nathancrum_src_garmin_emom_timer_source_main_mc_286_18_288_0_stop:
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/source/main.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,5 @@
+project.manifest = manifest.xml
+base.sourcePath = source
+
+# Set the source path to include the current directory
+base.sourcePath = .

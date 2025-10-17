@@ -129,26 +129,20 @@ class EMOMConfigDelegate extends Ui.BehaviorDelegate {
     }
 
     function onNextPage() {
-        var view = Ui.View.findViewById("config");
-        if (view == null) {
-            view = Ui.getCurrentView()[0];
-        }
+        var view = Ui.getCurrentView()[0] as EMOMConfigView;
         view.moveSelectionDown();
         return true;
     }
 
     function onPreviousPage() {
-        var view = Ui.View.findViewById("config");
-        if (view == null) {
-            view = Ui.getCurrentView()[0];
-        }
+        var view = Ui.getCurrentView()[0] as EMOMConfigView;
         view.moveSelectionUp();
         return true;
     }
 
     function onKey(keyEvent) {
         var key = keyEvent.getKey();
-        var view = Ui.getCurrentView()[0];
+        var view = Ui.getCurrentView()[0] as EMOMConfigView;
         
         if (key == Ui.KEY_UP) {
             view.decreaseValue();
@@ -164,7 +158,7 @@ class EMOMConfigDelegate extends Ui.BehaviorDelegate {
     }
 
     function onSelect() {
-        var view = Ui.getCurrentView()[0];
+        var view = Ui.getCurrentView()[0] as EMOMConfigView;
         view.startTimer();
         return true;
     }
@@ -188,7 +182,7 @@ class EMOMTimerView extends Ui.View {
         _isRunning = true;
         
         _timer = new Timer.Timer();
-        _timer.start(method(:timerCallback), 1000, true);
+        _timer.start(method(:timerCallback) as Method() as Void, 1000, true);
     }
 
     function timerCallback() {
@@ -276,13 +270,13 @@ class EMOMTimerDelegate extends Ui.BehaviorDelegate {
     }
 
     function onSelect() {
-        var view = Ui.getCurrentView()[0];
+        var view = Ui.getCurrentView()[0] as EMOMTimerView;
         view.togglePause();
         return true;
     }
 
     function onBack() {
-        var view = Ui.getCurrentView()[0];
+        var view = Ui.getCurrentView()[0] as EMOMTimerView;
         view.stopTimer();
         Ui.popView(Ui.SLIDE_RIGHT);
         return true;

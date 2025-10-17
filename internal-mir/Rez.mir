@@ -1,0 +1,1534 @@
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Strings,12,11,18]; ]
+    module Strings {
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [AppName,13,27,34]; @symbol_type<0> = [ResourceId,13,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 16; @symbol_moduledef = [Styles,16,11,17]; ]
+    module Styles {
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 16; ]
+        <init> {
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 17; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,17,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 17; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 18; @position = 18; @symbol_constdef = [exclude,18,18,25]; @symbol_type<0> = [Boolean,18,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 21; @symbol_moduledef = [system_size__menu_header,21,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 21; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 22; @position = 18; @symbol_constdef = [width,22,18,23]; @symbol_type<0> = [Number,22,27,33]; ]
+            const width as Number = 151;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 23; @position = 18; @symbol_constdef = [height,23,18,24]; @symbol_type<0> = [Number,23,28,34]; ]
+            const height as Number = 53;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 26; @symbol_moduledef = [system_loc__hint_button_left_bottom,26,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 26; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 27; @position = 18; @symbol_constdef = [exclude,27,18,25]; @symbol_type<0> = [Boolean,27,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 30; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,30,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 30; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 31; @position = 18; @symbol_constdef = [exclude,31,18,25]; @symbol_type<0> = [Boolean,31,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 34; @symbol_moduledef = [prompt_loc__body_no_title,34,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 34; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 35; @position = 18; @symbol_constdef = [x,35,18,19]; @symbol_type<0> = [Number,35,23,29]; ]
+            const x as Number = 4;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 36; @position = 18; @symbol_constdef = [y,36,18,19]; @symbol_type<0> = [Number,36,23,29]; ]
+            const y as Number = 66;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 39; @symbol_moduledef = [system_icon_dark__about,39,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 39; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 40; @position = 18; @symbol_constdef = [filename,40,18,26]; @symbol_type<0> = [String,40,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__about.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 41; @position = 18; @symbol_constdef = [disableTransparency,41,18,37]; @symbol_type<0> = [Boolean,41,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [dithering,42,18,27]; @symbol_type<0> = [String,42,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 43; @position = 18; @symbol_constdef = [automaticPalette,43,18,34]; @symbol_type<0> = [Boolean,43,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 46; @symbol_moduledef = [system_icon_light__question,46,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 46; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [filename,47,18,26]; @symbol_type<0> = [String,47,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__question.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [disableTransparency,48,18,37]; @symbol_type<0> = [Boolean,48,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [dithering,49,18,27]; @symbol_type<0> = [String,49,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [automaticPalette,50,18,34]; @symbol_type<0> = [Boolean,50,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 53; @symbol_moduledef = [system_loc__hint_button_left_top,53,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 53; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [exclude,54,18,25]; @symbol_type<0> = [Boolean,54,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 57; @symbol_moduledef = [prompt_font__title,57,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 57; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 58 18 ]
+                symbol [ Graphics %tmp.1 58 34 42 ];
+                %tmp.1 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_RIGHT %tmp.2 58 43 61 ];
+                %tmp.2 = getv %tmp.1 :TEXT_JUSTIFY_RIGHT;
+                symbol [ Graphics %tmp.3 58 62 70 ];
+                %tmp.3 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.4 58 71 91 ];
+                %tmp.4 = getv %tmp.3 :TEXT_JUSTIFY_VCENTER;
+                %tmp.5 = bitor %tmp.2 %tmp.4;
+                putv self :justification %tmp.5;
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 59 18 ]
+                symbol [ Graphics %tmp.6 59 25 33 ];
+                %tmp.6 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.7 59 34 43 ];
+                %tmp.7 = getv %tmp.6 :FONT_TINY;
+                putv self :font %tmp.7;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 58; @position = 18; @symbol_constdef = [justification,58,18,31]; ]
+            const justification;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [font,59,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 62; @symbol_moduledef = [system_icon_dark__discard,62,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 62; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 63; @position = 18; @symbol_constdef = [filename,63,18,26]; @symbol_type<0> = [String,63,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__discard.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [disableTransparency,64,18,37]; @symbol_type<0> = [Boolean,64,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [dithering,65,18,27]; @symbol_type<0> = [String,65,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [automaticPalette,66,18,34]; @symbol_type<0> = [Boolean,66,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 69; @symbol_moduledef = [system_size__menu_item,69,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 69; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [width,70,18,23]; @symbol_type<0> = [Number,70,27,33]; ]
+            const width as Number = 151;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [height,71,18,24]; @symbol_type<0> = [Number,71,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 74; @symbol_moduledef = [system_color_dark__text,74,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 74; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 76 18 ]
+                symbol [ Graphics %tmp.8 76 31 39 ];
+                %tmp.8 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.9 76 40 57 ];
+                %tmp.9 = getv %tmp.8 :COLOR_TRANSPARENT;
+                putv self :background %tmp.9;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [color,75,18,23]; @symbol_type<0> = [Number,75,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [background,76,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 79; @symbol_moduledef = [system_icon_destructive__discard,79,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 79; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [filename,80,18,26]; @symbol_type<0> = [String,80,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__discard.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [disableTransparency,81,18,37]; @symbol_type<0> = [Boolean,81,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [dithering,82,18,27]; @symbol_type<0> = [String,82,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [automaticPalette,83,18,34]; @symbol_type<0> = [Boolean,83,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 86; @symbol_moduledef = [system_icon_dark__hint_action_menu,86,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 86; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [filename,87,18,26]; @symbol_type<0> = [String,87,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [disableTransparency,88,18,37]; @symbol_type<0> = [Boolean,88,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [dithering,89,18,27]; @symbol_type<0> = [String,89,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [automaticPalette,90,18,34]; @symbol_type<0> = [Boolean,90,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 93; @symbol_moduledef = [prompt_size__title,93,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 93; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [width,94,18,23]; @symbol_type<0> = [Number,94,27,33]; ]
+            const width as Number = 57;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [height,95,18,24]; @symbol_type<0> = [Number,95,28,34]; ]
+            const height as Number = 51;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 98; @symbol_moduledef = [confirmation_font__body,98,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 98; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 99 18 ]
+                symbol [ Graphics %tmp.10 99 34 42 ];
+                %tmp.10 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.11 99 43 62 ];
+                %tmp.11 = getv %tmp.10 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.11;
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 100 18 ]
+                symbol [ Graphics %tmp.12 100 25 33 ];
+                %tmp.12 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.13 100 34 44 ];
+                %tmp.13 = getv %tmp.12 :FONT_XTINY;
+                putv self :font %tmp.13;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [justification,99,18,31]; ]
+            const justification;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [font,100,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 103; @symbol_moduledef = [system_color_dark__background,103,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 103; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [color,104,18,23]; @symbol_type<0> = [Number,104,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [background,105,18,28]; @symbol_type<0> = [Number,105,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 108; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,108,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 108; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [exclude,109,18,25]; @symbol_type<0> = [Boolean,109,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 112; @symbol_moduledef = [system_size__launch_icon,112,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 112; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [scaleX,113,18,24]; @symbol_type<0> = [Number,113,28,34]; ]
+            const scaleX as Number = 54;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [scaleY,114,18,24]; @symbol_type<0> = [Number,114,28,34]; ]
+            const scaleY as Number = 54;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [scaleRelativeTo,115,18,33]; @symbol_type<0> = [String,115,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 118; @symbol_moduledef = [confirmation_input__confirm,118,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 118; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 119 18 ]
+                symbol [ WatchUi %tmp.14 119 27 34 ];
+                %tmp.14 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.15 119 35 44 ];
+                %tmp.15 = getv %tmp.14 :KEY_ENTER;
+                putv self :button %tmp.15;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [button,119,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 122; @symbol_moduledef = [prompt_font__body_with_title,122,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 122; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 123 18 ]
+                symbol [ Graphics %tmp.16 123 34 42 ];
+                %tmp.16 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.17 123 43 62 ];
+                %tmp.17 = getv %tmp.16 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.17;
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 124 18 ]
+                symbol [ Graphics %tmp.18 124 25 33 ];
+                %tmp.18 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.19 124 34 43 ];
+                %tmp.19 = getv %tmp.18 :FONT_TINY;
+                putv self :font %tmp.19;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [justification,123,18,31]; ]
+            const justification;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [font,124,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 127; @symbol_moduledef = [confirmation_loc__body,127,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 127; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [x,128,18,19]; @symbol_type<0> = [Number,128,23,29]; ]
+            const x as Number = 2;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [y,129,18,19]; @symbol_type<0> = [Number,129,23,29]; ]
+            const y as Number = 69;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 132; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,132,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 132; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [exclude,133,18,25]; @symbol_type<0> = [Boolean,133,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 136; @symbol_moduledef = [prompt_color_dark__background,136,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 136; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [background,137,18,28]; @symbol_type<0> = [Number,137,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 140; @symbol_moduledef = [system_icon_destructive__hint_action_menu,140,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 140; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [filename,141,18,26]; @symbol_type<0> = [String,141,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 142; @position = 18; @symbol_constdef = [disableTransparency,142,18,37]; @symbol_type<0> = [Boolean,142,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [dithering,143,18,27]; @symbol_type<0> = [String,143,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [automaticPalette,144,18,34]; @symbol_type<0> = [Boolean,144,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 147; @symbol_moduledef = [system_loc__hint_action_menu,147,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 147; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [x,148,18,19]; @symbol_type<0> = [Number,148,23,29]; ]
+            const x as Number = 151;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [y,149,18,19]; @symbol_type<0> = [Number,149,23,29]; ]
+            const y as Number = 24;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [horizontalJustification,150,18,41]; @symbol_type<0> = [String,150,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [verticalJustification,151,18,39]; @symbol_type<0> = [String,151,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 154; @symbol_moduledef = [confirmation_icon__hint_confirm,154,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 154; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [filename,155,18,26]; @symbol_type<0> = [String,155,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [disableTransparency,156,18,37]; @symbol_type<0> = [Boolean,156,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [dithering,157,18,27]; @symbol_type<0> = [String,157,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [automaticPalette,158,18,34]; @symbol_type<0> = [Boolean,158,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 161; @symbol_moduledef = [system_loc__hint_button_left_middle,161,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 161; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [exclude,162,18,25]; @symbol_type<0> = [Boolean,162,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 165; @symbol_moduledef = [prompt_size__body_no_title,165,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 165; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [width,166,18,23]; @symbol_type<0> = [Number,166,27,33]; ]
+            const width as Number = 142;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 167; @position = 18; @symbol_constdef = [height,167,18,24]; @symbol_type<0> = [Number,167,28,34]; ]
+            const height as Number = 85;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 170; @symbol_moduledef = [system_icon_light__hint_button_left_top,170,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 170; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [exclude,171,18,25]; @symbol_type<0> = [Boolean,171,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 174; @symbol_moduledef = [prompt_color_light__background,174,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [background,175,18,28]; @symbol_type<0> = [Number,175,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 178; @symbol_moduledef = [confirmation_input__delete,178,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 178; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 179 18 ]
+                symbol [ WatchUi %tmp.20 179 27 34 ];
+                %tmp.20 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.21 179 35 44 ];
+                %tmp.21 = getv %tmp.20 :KEY_ENTER;
+                putv self :button %tmp.21;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [button,179,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 182; @symbol_moduledef = [system_icon_dark__hint_button_left_top,182,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [exclude,183,18,25]; @symbol_type<0> = [Boolean,183,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 186; @symbol_moduledef = [system_input__action_menu,186,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 186; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 187 18 ]
+                symbol [ WatchUi %tmp.22 187 27 34 ];
+                %tmp.22 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.23 187 35 44 ];
+                %tmp.23 = getv %tmp.22 :KEY_ENTER;
+                putv self :button %tmp.23;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [button,187,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 190; @symbol_moduledef = [system_icon_light__save,190,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 190; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [filename,191,18,26]; @symbol_type<0> = [String,191,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__save.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 192; @position = 18; @symbol_constdef = [disableTransparency,192,18,37]; @symbol_type<0> = [Boolean,192,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [dithering,193,18,27]; @symbol_type<0> = [String,193,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [automaticPalette,194,18,34]; @symbol_type<0> = [Boolean,194,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 197; @symbol_moduledef = [prompt_color_light__body,197,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 197; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 199 18 ]
+                symbol [ Graphics %tmp.24 199 31 39 ];
+                %tmp.24 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.25 199 40 57 ];
+                %tmp.25 = getv %tmp.24 :COLOR_TRANSPARENT;
+                putv self :background %tmp.25;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [color,198,18,23]; @symbol_type<0> = [Number,198,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [background,199,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 202; @symbol_moduledef = [system_loc__subwindow,202,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [x,203,18,19]; @symbol_type<0> = [Number,203,23,29]; ]
+            const x as Number = 109;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [y,204,18,19]; @symbol_type<0> = [Number,204,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 207; @symbol_moduledef = [system_icon_light__warning,207,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 207; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [filename,208,18,26]; @symbol_type<0> = [String,208,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__warning.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [disableTransparency,209,18,37]; @symbol_type<0> = [Boolean,209,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [dithering,210,18,27]; @symbol_type<0> = [String,210,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [automaticPalette,211,18,34]; @symbol_type<0> = [Boolean,211,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 214; @symbol_moduledef = [confirmation_color_light__body,214,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 216 18 ]
+                symbol [ Graphics %tmp.26 216 31 39 ];
+                %tmp.26 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.27 216 40 57 ];
+                %tmp.27 = getv %tmp.26 :COLOR_TRANSPARENT;
+                putv self :background %tmp.27;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [color,215,18,23]; @symbol_type<0> = [Number,215,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 216; @position = 18; @symbol_constdef = [background,216,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 219; @symbol_moduledef = [confirmation_icon_light__hint_keep,219,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 219; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [filename,220,18,26]; @symbol_type<0> = [String,220,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [disableTransparency,221,18,37]; @symbol_type<0> = [Boolean,221,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [dithering,222,18,27]; @symbol_type<0> = [String,222,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [automaticPalette,223,18,34]; @symbol_type<0> = [Boolean,223,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 226; @symbol_moduledef = [activity_color_light__background,226,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 226; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [color,227,18,23]; @symbol_type<0> = [Number,227,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [background,228,18,28]; @symbol_type<0> = [Number,228,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 231; @symbol_moduledef = [system_icon_positive__hint_button_right_top,231,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 231; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [filename,232,18,26]; @symbol_type<0> = [String,232,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [disableTransparency,233,18,37]; @symbol_type<0> = [Boolean,233,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [dithering,234,18,27]; @symbol_type<0> = [String,234,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [automaticPalette,235,18,34]; @symbol_type<0> = [Boolean,235,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 238; @symbol_moduledef = [system_size__screen,238,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [width,239,18,23]; @symbol_type<0> = [Number,239,27,33]; ]
+            const width as Number = 163;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [height,240,18,24]; @symbol_type<0> = [Number,240,28,34]; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 243; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,243,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 243; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [exclude,244,18,25]; @symbol_type<0> = [Boolean,244,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 247; @symbol_moduledef = [system_color_light__background,247,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 247; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 248; @position = 18; @symbol_constdef = [color,248,18,23]; @symbol_type<0> = [Number,248,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [background,249,18,28]; @symbol_type<0> = [Number,249,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 252; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,252,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 252; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 253; @position = 18; @symbol_constdef = [filename,253,18,26]; @symbol_type<0> = [String,253,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [disableTransparency,254,18,37]; @symbol_type<0> = [Boolean,254,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [dithering,255,18,27]; @symbol_type<0> = [String,255,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [automaticPalette,256,18,34]; @symbol_type<0> = [Boolean,256,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 259; @symbol_moduledef = [confirmation_loc__hint_confirm,259,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [x,260,18,19]; @symbol_type<0> = [Number,260,23,29]; ]
+            const x as Number = 110;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [y,261,18,19]; @symbol_type<0> = [Number,261,23,29]; ]
+            const y as Number = 1;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 264; @symbol_moduledef = [activity_color_dark__text,264,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 264; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 266 18 ]
+                symbol [ Graphics %tmp.28 266 31 39 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.29 266 40 57 ];
+                %tmp.29 = getv %tmp.28 :COLOR_TRANSPARENT;
+                putv self :background %tmp.29;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [color,265,18,23]; @symbol_type<0> = [Number,265,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [background,266,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 269; @symbol_moduledef = [confirmation_input__keep,269,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 269; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 270 18 ]
+                symbol [ WatchUi %tmp.30 270 27 34 ];
+                %tmp.30 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.31 270 35 43 ];
+                %tmp.31 = getv %tmp.30 :KEY_DOWN;
+                putv self :button %tmp.31;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [button,270,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 273; @symbol_moduledef = [prompt_loc__body_with_title,273,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [x,274,18,19]; @symbol_type<0> = [Number,274,23,29]; ]
+            const x as Number = 4;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [y,275,18,19]; @symbol_type<0> = [Number,275,23,29]; ]
+            const y as Number = 66;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 278; @symbol_moduledef = [system_icon_dark__search,278,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 278; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [filename,279,18,26]; @symbol_type<0> = [String,279,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__search.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [disableTransparency,280,18,37]; @symbol_type<0> = [Boolean,280,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [dithering,281,18,27]; @symbol_type<0> = [String,281,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [automaticPalette,282,18,34]; @symbol_type<0> = [Boolean,282,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 285; @symbol_moduledef = [activity_color_light__text,285,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 285; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 287 18 ]
+                symbol [ Graphics %tmp.32 287 31 39 ];
+                %tmp.32 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.33 287 40 57 ];
+                %tmp.33 = getv %tmp.32 :COLOR_TRANSPARENT;
+                putv self :background %tmp.33;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [color,286,18,23]; @symbol_type<0> = [Number,286,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [background,287,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 290; @symbol_moduledef = [confirmation_icon__hint_keep,290,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 290; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [filename,291,18,26]; @symbol_type<0> = [String,291,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [disableTransparency,292,18,37]; @symbol_type<0> = [Boolean,292,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [dithering,293,18,27]; @symbol_type<0> = [String,293,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [automaticPalette,294,18,34]; @symbol_type<0> = [Boolean,294,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 297; @symbol_moduledef = [system_icon_dark__save,297,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 297; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [filename,298,18,26]; @symbol_type<0> = [String,298,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__save.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [disableTransparency,299,18,37]; @symbol_type<0> = [Boolean,299,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [dithering,300,18,27]; @symbol_type<0> = [String,300,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [automaticPalette,301,18,34]; @symbol_type<0> = [Boolean,301,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 304; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,304,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 304; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [exclude,305,18,25]; @symbol_type<0> = [Boolean,305,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 308; @symbol_moduledef = [system_icon_light__search,308,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 308; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [filename,309,18,26]; @symbol_type<0> = [String,309,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__search.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [disableTransparency,310,18,37]; @symbol_type<0> = [Boolean,310,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [dithering,311,18,27]; @symbol_type<0> = [String,311,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [automaticPalette,312,18,34]; @symbol_type<0> = [Boolean,312,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 315; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,315,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 315; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [exclude,316,18,25]; @symbol_type<0> = [Boolean,316,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 319; @symbol_moduledef = [system_icon_positive__hint_button_left_top,319,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 319; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [exclude,320,18,25]; @symbol_type<0> = [Boolean,320,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 323; @symbol_moduledef = [system_loc__hint_button_right_bottom,323,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [exclude,324,18,25]; @symbol_type<0> = [Boolean,324,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 327; @symbol_moduledef = [confirmation_icon_dark__hint_reject,327,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 327; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [filename,328,18,26]; @symbol_type<0> = [String,328,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [disableTransparency,329,18,37]; @symbol_type<0> = [Boolean,329,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [dithering,330,18,27]; @symbol_type<0> = [String,330,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [automaticPalette,331,18,34]; @symbol_type<0> = [Boolean,331,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 334; @symbol_moduledef = [confirmation_color_dark__body,334,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 334; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 336 18 ]
+                symbol [ Graphics %tmp.34 336 31 39 ];
+                %tmp.34 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.35 336 40 57 ];
+                %tmp.35 = getv %tmp.34 :COLOR_TRANSPARENT;
+                putv self :background %tmp.35;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [color,335,18,23]; @symbol_type<0> = [Number,335,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [background,336,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 339; @symbol_moduledef = [confirmation_icon_light__hint_confirm,339,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 339; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [filename,340,18,26]; @symbol_type<0> = [String,340,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [disableTransparency,341,18,37]; @symbol_type<0> = [Boolean,341,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 342; @position = 18; @symbol_constdef = [dithering,342,18,27]; @symbol_type<0> = [String,342,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [automaticPalette,343,18,34]; @symbol_type<0> = [Boolean,343,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 346; @symbol_moduledef = [prompt_color_dark__title,346,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 346; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 348 18 ]
+                symbol [ Graphics %tmp.36 348 31 39 ];
+                %tmp.36 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.37 348 40 57 ];
+                %tmp.37 = getv %tmp.36 :COLOR_TRANSPARENT;
+                putv self :background %tmp.37;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [color,347,18,23]; @symbol_type<0> = [Number,347,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [background,348,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 351; @symbol_moduledef = [system_icon_destructive__cancel,351,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 351; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [filename,352,18,26]; @symbol_type<0> = [String,352,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__cancel.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [disableTransparency,353,18,37]; @symbol_type<0> = [Boolean,353,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [dithering,354,18,27]; @symbol_type<0> = [String,354,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [automaticPalette,355,18,34]; @symbol_type<0> = [Boolean,355,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 358; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,358,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 358; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [exclude,359,18,25]; @symbol_type<0> = [Boolean,359,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 362; @symbol_moduledef = [prompt_loc__title,362,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [x,363,18,19]; @symbol_type<0> = [Number,363,23,29]; ]
+            const x as Number = 21;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [y,364,18,19]; @symbol_type<0> = [Number,364,23,29]; ]
+            const y as Number = 8;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 367; @symbol_moduledef = [confirmation_font_enhanced_readability__body,367,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 367; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [exclude,368,18,25]; @symbol_type<0> = [Boolean,368,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 371; @symbol_moduledef = [prompt_color_light__title,371,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 371; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 373 18 ]
+                symbol [ Graphics %tmp.38 373 31 39 ];
+                %tmp.38 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.39 373 40 57 ];
+                %tmp.39 = getv %tmp.38 :COLOR_TRANSPARENT;
+                putv self :background %tmp.39;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [color,372,18,23]; @symbol_type<0> = [Number,372,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [background,373,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 376; @symbol_moduledef = [system_icon_dark__hint_button_right_top,376,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [filename,377,18,26]; @symbol_type<0> = [String,377,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [disableTransparency,378,18,37]; @symbol_type<0> = [Boolean,378,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [dithering,379,18,27]; @symbol_type<0> = [String,379,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [automaticPalette,380,18,34]; @symbol_type<0> = [Boolean,380,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 383; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,383,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 383; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [exclude,384,18,25]; @symbol_type<0> = [Boolean,384,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 387; @symbol_moduledef = [confirmation_icon_dark__hint_keep,387,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [filename,388,18,26]; @symbol_type<0> = [String,388,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [disableTransparency,389,18,37]; @symbol_type<0> = [Boolean,389,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [dithering,390,18,27]; @symbol_type<0> = [String,390,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [automaticPalette,391,18,34]; @symbol_type<0> = [Boolean,391,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 394; @symbol_moduledef = [system_icon_light__cancel,394,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 394; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [filename,395,18,26]; @symbol_type<0> = [String,395,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__cancel.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 396; @position = 18; @symbol_constdef = [disableTransparency,396,18,37]; @symbol_type<0> = [Boolean,396,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [dithering,397,18,27]; @symbol_type<0> = [String,397,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [automaticPalette,398,18,34]; @symbol_type<0> = [Boolean,398,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 401; @symbol_moduledef = [confirmation_icon_light__hint_reject,401,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 401; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [filename,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [disableTransparency,403,18,37]; @symbol_type<0> = [Boolean,403,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [dithering,404,18,27]; @symbol_type<0> = [String,404,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [automaticPalette,405,18,34]; @symbol_type<0> = [Boolean,405,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 408; @symbol_moduledef = [system_icon_light__about,408,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [filename,409,18,26]; @symbol_type<0> = [String,409,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__about.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [disableTransparency,410,18,37]; @symbol_type<0> = [Boolean,410,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 411; @position = 18; @symbol_constdef = [dithering,411,18,27]; @symbol_type<0> = [String,411,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [automaticPalette,412,18,34]; @symbol_type<0> = [Boolean,412,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 415; @symbol_moduledef = [system_size__toast_icon,415,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 415; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [scaleX,416,18,24]; @symbol_type<0> = [Number,416,28,34]; ]
+            const scaleX as Number = 35;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [scaleY,417,18,24]; @symbol_type<0> = [Number,417,28,34]; ]
+            const scaleY as Number = 35;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [scaleRelativeTo,418,18,33]; @symbol_type<0> = [String,418,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 421; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,421,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 421; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [exclude,422,18,25]; @symbol_type<0> = [Boolean,422,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 425; @symbol_moduledef = [confirmation_icon__hint_reject,425,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 425; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 426; @position = 18; @symbol_constdef = [filename,426,18,26]; @symbol_type<0> = [String,426,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [disableTransparency,427,18,37]; @symbol_type<0> = [Boolean,427,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [dithering,428,18,27]; @symbol_type<0> = [String,428,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [automaticPalette,429,18,34]; @symbol_type<0> = [Boolean,429,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 432; @symbol_moduledef = [system_icon_light__hint_action_menu,432,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 432; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 433; @position = 18; @symbol_constdef = [filename,433,18,26]; @symbol_type<0> = [String,433,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 434; @position = 18; @symbol_constdef = [disableTransparency,434,18,37]; @symbol_type<0> = [Boolean,434,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [dithering,435,18,27]; @symbol_type<0> = [String,435,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [automaticPalette,436,18,34]; @symbol_type<0> = [Boolean,436,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 439; @symbol_moduledef = [system_icon_light__hint_button_right_middle,439,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 439; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [exclude,440,18,25]; @symbol_type<0> = [Boolean,440,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 443; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,443,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 443; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [exclude,444,18,25]; @symbol_type<0> = [Boolean,444,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 447; @symbol_moduledef = [confirmation_loc__hint_reject,447,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 447; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [x,448,18,19]; @symbol_type<0> = [Number,448,23,29]; ]
+            const x as Number = 0;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [y,449,18,19]; @symbol_type<0> = [Number,449,23,29]; ]
+            const y as Number = 128;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 452; @symbol_moduledef = [confirmation_icon_dark__hint_delete,452,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [filename,453,18,26]; @symbol_type<0> = [String,453,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [disableTransparency,454,18,37]; @symbol_type<0> = [Boolean,454,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [dithering,455,18,27]; @symbol_type<0> = [String,455,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 456; @position = 18; @symbol_constdef = [automaticPalette,456,18,34]; @symbol_type<0> = [Boolean,456,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 459; @symbol_moduledef = [activity_color_dark__background,459,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 459; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [color,460,18,23]; @symbol_type<0> = [Number,460,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [background,461,18,28]; @symbol_type<0> = [Number,461,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 464; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,464,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 464; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [exclude,465,18,25]; @symbol_type<0> = [Boolean,465,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 468; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,468,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 468; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [exclude,469,18,25]; @symbol_type<0> = [Boolean,469,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 472; @symbol_moduledef = [system_size__menu_icon,472,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 472; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [scaleX,473,18,24]; @symbol_type<0> = [Number,473,28,34]; ]
+            const scaleX as Number = 32;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [scaleY,474,18,24]; @symbol_type<0> = [Number,474,28,34]; ]
+            const scaleY as Number = 32;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [scaleRelativeTo,475,18,33]; @symbol_type<0> = [String,475,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 478; @symbol_moduledef = [system_icon_destructive__warning,478,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [filename,479,18,26]; @symbol_type<0> = [String,479,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__warning.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [disableTransparency,480,18,37]; @symbol_type<0> = [Boolean,480,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [dithering,481,18,27]; @symbol_type<0> = [String,481,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [automaticPalette,482,18,34]; @symbol_type<0> = [Boolean,482,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 485; @symbol_moduledef = [system_loc__hint_button_right_middle,485,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 485; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [exclude,486,18,25]; @symbol_type<0> = [Boolean,486,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 489; @symbol_moduledef = [system_icon_dark__cancel,489,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [filename,490,18,26]; @symbol_type<0> = [String,490,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__cancel.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [disableTransparency,491,18,37]; @symbol_type<0> = [Boolean,491,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [dithering,492,18,27]; @symbol_type<0> = [String,492,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [automaticPalette,493,18,34]; @symbol_type<0> = [Boolean,493,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 496; @symbol_moduledef = [prompt_size__body_with_title,496,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 496; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [width,497,18,23]; @symbol_type<0> = [Number,497,27,33]; ]
+            const width as Number = 142;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [height,498,18,24]; @symbol_type<0> = [Number,498,28,34]; ]
+            const height as Number = 85;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 501; @symbol_moduledef = [system_loc__hint_button_right_top,501,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 501; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [x,502,18,19]; @symbol_type<0> = [Number,502,23,29]; ]
+            const x as Number = 151;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [y,503,18,19]; @symbol_type<0> = [Number,503,23,29]; ]
+            const y as Number = 24;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [horizontalJustification,504,18,41]; @symbol_type<0> = [String,504,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [verticalJustification,505,18,39]; @symbol_type<0> = [String,505,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 508; @symbol_moduledef = [system_color_light__text,508,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 508; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 510 18 ]
+                symbol [ Graphics %tmp.40 510 31 39 ];
+                %tmp.40 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.41 510 40 57 ];
+                %tmp.41 = getv %tmp.40 :COLOR_TRANSPARENT;
+                putv self :background %tmp.41;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [color,509,18,23]; @symbol_type<0> = [Number,509,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [background,510,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 513; @symbol_moduledef = [system_icon_light__check,513,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 513; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [filename,514,18,26]; @symbol_type<0> = [String,514,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__check.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [disableTransparency,515,18,37]; @symbol_type<0> = [Boolean,515,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [dithering,516,18,27]; @symbol_type<0> = [String,516,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [automaticPalette,517,18,34]; @symbol_type<0> = [Boolean,517,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 520; @symbol_moduledef = [confirmation_input__reject,520,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 520; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 521 18 ]
+                symbol [ WatchUi %tmp.42 521 27 34 ];
+                %tmp.42 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.43 521 35 43 ];
+                %tmp.43 = getv %tmp.42 :KEY_DOWN;
+                putv self :button %tmp.43;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [button,521,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 524; @symbol_moduledef = [system_icon_light__revert,524,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 524; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [filename,525,18,26]; @symbol_type<0> = [String,525,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__revert.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [disableTransparency,526,18,37]; @symbol_type<0> = [Boolean,526,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [dithering,527,18,27]; @symbol_type<0> = [String,527,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [automaticPalette,528,18,34]; @symbol_type<0> = [Boolean,528,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 531; @symbol_moduledef = [system_size__subwindow,531,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 531; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [width,532,18,23]; @symbol_type<0> = [Number,532,27,33]; ]
+            const width as Number = 54;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [height,533,18,24]; @symbol_type<0> = [Number,533,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 536; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,536,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 536; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [exclude,537,18,25]; @symbol_type<0> = [Boolean,537,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 540; @symbol_moduledef = [system_icon_dark__check,540,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 540; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [filename,541,18,26]; @symbol_type<0> = [String,541,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__check.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [disableTransparency,542,18,37]; @symbol_type<0> = [Boolean,542,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [dithering,543,18,27]; @symbol_type<0> = [String,543,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [automaticPalette,544,18,34]; @symbol_type<0> = [Boolean,544,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 547; @symbol_moduledef = [confirmation_loc__hint_keep,547,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 547; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [x,548,18,19]; @symbol_type<0> = [Number,548,23,29]; ]
+            const x as Number = 0;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [y,549,18,19]; @symbol_type<0> = [Number,549,23,29]; ]
+            const y as Number = 128;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [horizontalJustification,550,18,41]; @symbol_type<0> = [String,550,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 553; @symbol_moduledef = [confirmation_loc__hint_delete,553,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [x,554,18,19]; @symbol_type<0> = [Number,554,23,29]; ]
+            const x as Number = 136;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [y,555,18,19]; @symbol_type<0> = [Number,555,23,29]; ]
+            const y as Number = 26;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [horizontalJustification,556,18,41]; @symbol_type<0> = [String,556,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [verticalJustification,557,18,39]; @symbol_type<0> = [String,557,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 560; @symbol_moduledef = [system_icon_positive__hint_action_menu,560,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 560; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [filename,561,18,26]; @symbol_type<0> = [String,561,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [disableTransparency,562,18,37]; @symbol_type<0> = [Boolean,562,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [dithering,563,18,27]; @symbol_type<0> = [String,563,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [automaticPalette,564,18,34]; @symbol_type<0> = [Boolean,564,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 567; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,567,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [exclude,568,18,25]; @symbol_type<0> = [Boolean,568,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 571; @symbol_moduledef = [system_icon_light__hint_button_left_middle,571,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 571; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [exclude,572,18,25]; @symbol_type<0> = [Boolean,572,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 575; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,575,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [exclude,576,18,25]; @symbol_type<0> = [Boolean,576,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 579; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,579,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 579; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [exclude,580,18,25]; @symbol_type<0> = [Boolean,580,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 583; @symbol_moduledef = [system_icon_dark__revert,583,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [filename,584,18,26]; @symbol_type<0> = [String,584,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__revert.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [disableTransparency,585,18,37]; @symbol_type<0> = [Boolean,585,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [dithering,586,18,27]; @symbol_type<0> = [String,586,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [automaticPalette,587,18,34]; @symbol_type<0> = [Boolean,587,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 590; @symbol_moduledef = [confirmation_icon_light__hint_delete,590,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 590; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [filename,591,18,26]; @symbol_type<0> = [String,591,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [disableTransparency,592,18,37]; @symbol_type<0> = [Boolean,592,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [dithering,593,18,27]; @symbol_type<0> = [String,593,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [automaticPalette,594,18,34]; @symbol_type<0> = [Boolean,594,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_dark__question,597,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__question.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [disableTransparency,599,18,37]; @symbol_type<0> = [Boolean,599,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [dithering,600,18,27]; @symbol_type<0> = [String,600,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [automaticPalette,601,18,34]; @symbol_type<0> = [Boolean,601,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 604; @symbol_moduledef = [system_icon_light__discard,604,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 604; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [filename,605,18,26]; @symbol_type<0> = [String,605,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__discard.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [disableTransparency,606,18,37]; @symbol_type<0> = [Boolean,606,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [dithering,607,18,27]; @symbol_type<0> = [String,607,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [automaticPalette,608,18,34]; @symbol_type<0> = [Boolean,608,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 611; @symbol_moduledef = [device_info,611,15,26]; ]
+        module device_info {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 611; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 613 18 ]
+                symbol [ Toybox %tmp.45 613 32 38 ];
+                %tmp.45 = getv ? :Toybox;
+                symbol [ System %tmp.46 613 39 45 ];
+                %tmp.46 = getv %tmp.45 :System;
+                symbol [ SCREEN_SHAPE_SEMI_OCTAGON %tmp.47 613 46 71 ];
+                %tmp.47 = getv %tmp.46 :SCREEN_SHAPE_SEMI_OCTAGON;
+                putv self :screenShape %tmp.47;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [screenWidth,612,18,29]; @symbol_type<0> = [Number,612,33,39]; ]
+            const screenWidth as Number = 163;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [screenShape,613,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [hasNightMode,614,18,30]; @symbol_type<0> = [Boolean,614,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [hasGpu,615,18,24]; @symbol_type<0> = [Boolean,615,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [screenHeight,616,18,30]; @symbol_type<0> = [Number,616,34,40]; ]
+            const screenHeight as Number = 156;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [hasTouchScreen,617,18,32]; @symbol_type<0> = [Boolean,617,36,43]; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,618,18,44]; @symbol_type<0> = [Boolean,618,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 621; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,621,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 621; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [filename,622,18,26]; @symbol_type<0> = [String,622,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [disableTransparency,623,18,37]; @symbol_type<0> = [Boolean,623,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [dithering,624,18,27]; @symbol_type<0> = [String,624,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [automaticPalette,625,18,34]; @symbol_type<0> = [Boolean,625,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 628; @symbol_moduledef = [prompt_font__body_no_title,628,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 628; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 629 18 ]
+                symbol [ Graphics %tmp.48 629 34 42 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.49 629 43 62 ];
+                %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.49;
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 630 18 ]
+                symbol [ Graphics %tmp.50 630 25 33 ];
+                %tmp.50 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.51 630 34 43 ];
+                %tmp.51 = getv %tmp.50 :FONT_TINY;
+                putv self :font %tmp.51;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [justification,629,18,31]; ]
+            const justification;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [font,630,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 633; @symbol_moduledef = [prompt_size__title_icon,633,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 633; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [scaleX,634,18,24]; @symbol_type<0> = [Number,634,28,34]; ]
+            const scaleX as Number = 32;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [scaleY,635,18,24]; @symbol_type<0> = [Number,635,28,34]; ]
+            const scaleY as Number = 32;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [scaleRelativeTo,636,18,33]; @symbol_type<0> = [String,636,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 639; @symbol_moduledef = [system_icon_dark__warning,639,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 639; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [filename,640,18,26]; @symbol_type<0> = [String,640,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__warning.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [disableTransparency,641,18,37]; @symbol_type<0> = [Boolean,641,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [dithering,642,18,27]; @symbol_type<0> = [String,642,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [automaticPalette,643,18,34]; @symbol_type<0> = [Boolean,643,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 646; @symbol_moduledef = [prompt_loc__title_icon,646,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 646; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [x,647,18,19]; @symbol_type<0> = [Number,647,23,29]; ]
+            const x as Number = 136;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [y,648,18,19]; @symbol_type<0> = [Number,648,23,29]; ]
+            const y as Number = 27;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [horizontalJustification,649,18,41]; @symbol_type<0> = [String,649,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [verticalJustification,650,18,39]; @symbol_type<0> = [String,650,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 653; @symbol_moduledef = [prompt_font_enhanced_readability__title,653,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 653; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [exclude,654,18,25]; @symbol_type<0> = [Boolean,654,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 657; @symbol_moduledef = [prompt_color_dark__body,657,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 657; ]
+            <init> {
+[ "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen" 659 18 ]
+                symbol [ Graphics %tmp.52 659 31 39 ];
+                %tmp.52 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.53 659 40 57 ];
+                %tmp.53 = getv %tmp.52 :COLOR_TRANSPARENT;
+                putv self :background %tmp.53;
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [color,658,18,23]; @symbol_type<0> = [Number,658,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [background,659,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 662; @symbol_moduledef = [confirmation_icon__hint_delete,662,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 662; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [filename,663,18,26]; @symbol_type<0> = [String,663,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 664; @position = 18; @symbol_constdef = [disableTransparency,664,18,37]; @symbol_type<0> = [Boolean,664,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [dithering,665,18,27]; @symbol_type<0> = [String,665,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [automaticPalette,666,18,34]; @symbol_type<0> = [Boolean,666,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 669; @symbol_moduledef = [system_icon_light__hint_button_right_top,669,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 669; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [filename,670,18,26]; @symbol_type<0> = [String,670,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 671; @position = 18; @symbol_constdef = [disableTransparency,671,18,37]; @symbol_type<0> = [Boolean,671,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 672; @position = 18; @symbol_constdef = [dithering,672,18,27]; @symbol_type<0> = [String,672,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 673; @position = 18; @symbol_constdef = [automaticPalette,673,18,34]; @symbol_type<0> = [Boolean,673,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 676; @symbol_moduledef = [confirmation_size__body,676,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 676; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 677; @position = 18; @symbol_constdef = [width,677,18,23]; @symbol_type<0> = [Number,677,27,33]; ]
+            const width as Number = 148;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 678; @position = 18; @symbol_constdef = [height,678,18,24]; @symbol_type<0> = [Number,678,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 681; @symbol_moduledef = [system_icon_positive__check,681,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 681; ]
+            <init> {
+            }
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [filename,682,18,26]; @symbol_type<0> = [String,682,30,36]; ]
+            const filename as String = "/Users/nathancrum/Library/Application Support/Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__check.svg";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [disableTransparency,683,18,37]; @symbol_type<0> = [Boolean,683,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 684; @position = 18; @symbol_constdef = [dithering,684,18,27]; @symbol_type<0> = [String,684,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 685; @position = 18; @symbol_constdef = [automaticPalette,685,18,34]; @symbol_type<0> = [Boolean,685,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+    }
+}
+[ @file = "/Users/nathancrum/src/garmin/emom_timer/gen/006-B3889-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

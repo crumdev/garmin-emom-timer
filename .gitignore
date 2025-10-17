@@ -1,1 +1,20 @@
-./developer_key
+# Garmin Connect IQ build files
+*.prg
+*.prg.debug.xml
+*.iq
+*.prg.debug
+bin/
+build/
+releases/
+
+# Developer key
+developer_key
+*.der
+*.pem
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
